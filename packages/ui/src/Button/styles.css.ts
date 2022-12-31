@@ -1,5 +1,5 @@
 import { styleVariants, style } from '@vanilla-extract/css';
-import { vars } from 'themes.base';
+import { vars } from '@stevejcox/design-system.themes.base';
 
 const base = style({ padding: 12 });
 

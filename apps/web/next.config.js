@@ -1,9 +1,11 @@
-const withTM = require("next-transpile-modules")(["ui"]);
-const {
-  createVanillaExtractPlugin
-} = require('@vanilla-extract/next-plugin');
-const withVanillaExtract = createVanillaExtractPlugin();
+const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin')
 
-module.exports =  withVanillaExtract(withTM({
+const withVanillaExtract = createVanillaExtractPlugin()
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-}));
+  swcMinify: true,
+}
+
+module.exports = withVanillaExtract(nextConfig)

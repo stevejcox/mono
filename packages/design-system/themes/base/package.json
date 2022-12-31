@@ -1,5 +1,5 @@
 {
-  "name": "themes.base",
+  "name": "@stevejcox/design-system.themes.base",
   "version": "0.0.1",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -7,7 +7,7 @@
   "scripts": {
     "build": "pnpm build:code && pnpm build:types",
     "build:code": "swc src -d dist --source-maps",
-    "build:types":"tsc --outDir ./dist",
+    "build:types":"tsc",
     "lint": "eslint src/*.ts*"
   },
   "dependencies": {

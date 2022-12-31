@@ -12,7 +12,8 @@
     "module": "ESNext",
     "target": "es6",
     "emitDeclarationOnly": true,
-    "declaration": true
+    "declaration": true,
+    "declarationDir": "./dist"
   },
   "references": [
     {
