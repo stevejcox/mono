@@ -18,6 +18,8 @@
         "^build"
       ],
       "cache": false
-    }
+    },
+    "clean": { "cache": false},
+    "clean:modules": { "cache": false}
   }
 }

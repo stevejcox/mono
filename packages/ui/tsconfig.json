@@ -2,18 +2,18 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "React Library",
   "extends": "tsconfig/base.json",
-  "include": ["."],
+  "include": ["src/**/*","package.json"],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
-    "rootDir": "src",
-    "composite": true,
+    "composite": false,
     "jsx": "react-jsx",
     "lib": ["ES2015"],
     "module": "ESNext",
     "target": "es6",
     "emitDeclarationOnly": true,
     "declaration": true,
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+    "resolveJsonModule": true
   },
   "references": [
     {
