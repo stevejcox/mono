@@ -1,13 +1,13 @@
 {
   "name": "themes.base",
   "version": "0.0.1",
-  "main": "./lib/index",
-  "types": "./lib/index",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "license": "MIT",
   "scripts": {
     "build": "pnpm build:code && pnpm build:types",
-    "build:code": "swc src -d lib --source-maps",
-    "build:types":"tsc src/* --declaration --emitDeclarationOnly --outDir lib",
+    "build:code": "swc src -d dist --source-maps",
+    "build:types":"tsc",
     "lint": "eslint src/*.ts*"
   },
   "dependencies": {
