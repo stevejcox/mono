@@ -1,9 +1,22 @@
 {
-  "extends": "tsconfig/react-library.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Library",
+  "extends": "tsconfig/base.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "composite": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2015"],
+    "module": "ESNext",
+    "target": "es6",
+    "emitDeclarationOnly": true,
+    "declaration": true
+  },
   "references": [
     {
       "path": "../design-system/themes/base/tsconfig.json"
-    }]
+    }
+  ]
 }
