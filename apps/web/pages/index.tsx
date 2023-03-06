@@ -1,4 +1,5 @@
 import { Button } from "@stevejcox/ui";
+import "@stevejcox/ui/index.css";
 
 export default function Web() {
   return (

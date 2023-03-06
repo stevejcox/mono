@@ -4,8 +4,10 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"],
+  "exports": {
+    ".": "./dist",
+    "./index.css": "./dist/index.css"
+  },
   "license": "MIT",  "scripts": {
     "build": "tsup ",
     "clean": "rm -rf dist",
