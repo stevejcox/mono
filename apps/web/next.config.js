@@ -6,4 +6,7 @@ const withVanillaExtract = createVanillaExtractPlugin();
 
 module.exports =  withVanillaExtract(withTM({
   reactStrictMode: true,
+  experimental: {
+    appDir: true
+  }
 }));

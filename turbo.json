@@ -20,6 +20,12 @@
       "cache": false
     },
     "clean": { "cache": false},
-    "clean:modules": { "cache": false}
+    "clean:modules": { "cache": false},
+    "start": {
+      "dependsOn": [
+        "build"
+      ],
+      "cache": false
+    }
   }
 }
